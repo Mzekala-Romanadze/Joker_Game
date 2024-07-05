@@ -34,23 +34,23 @@ def play_game():
 
         if len(winner_player) > 1:
             print(f"Game is over! There are {len(winner_player)} winners: {winner_player} Congratulations! "
-                  f"You won the game by {winner_score} points. ")
+                  f"You won the game by {sum(winner_score)} points. ")
         else:
-            print(f"Game is over! {winner_player} Congratulations! You won the game by {winner_score} points. ")
+            print(f"Game is over! {winner_player} Congratulations! You won the game by {sum(winner_score)} points. ")
 
         print(f"The players and scores: {game_scores_table}")
 
     if game_type == "In Pairs":
         print("Hello Players, you play In Pairs ")
         print("Be mindful of every decision. Success is in the details and teamwork.")
-        winner_team, winner_score, game_scores_table = play_game_in_pairs()
-        if len(winner_team) == 1:
-            print(f"Game is over! The winner team is {winner_team}! Congratulations! "
-                  f"You won the game by {winner_score} points. ")
-        else:
-            print(f"Game is over! It is draw. The final score of both teams is {winner_score} points. ")
-
-        print(f"The players and scores: {game_scores_table}")
+        # winner_team, winner_score, game_scores_table = play_game_in_pairs()
+        # if len(winner_team) == 1:
+        #     print(f"Game is over! The winner team is {winner_team}! Congratulations! "
+        #           f"You won the game by {winner_score} points. ")
+        # else:
+        #     print(f"Game is over! It is draw. The final score of both teams is {winner_score} points. ")
+        #
+        # print(f"The players and scores: {game_scores_table}")
 
 
 def main():
